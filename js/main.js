@@ -131,18 +131,18 @@ function typeWriter(sentence, n, x, y, speed) {
 
 
 
-// $(document).on('scroll', function () {
+$(document).on('scroll', function () {
 
-//     if ($('#title').visible(true) === true) {
+    if ($('#title').visible(true) === true) {
      
-//         $('.mainCanvas').fadeOut('slow');
-//     } 
+        $('.mainCanvas').fadeOut('slow');
+    } 
 
-//     if ($('#prologueSection').visible(true) === true) {
+    if ($('#prologueSection').visible(true) === true) {
 
-//         $('body').addClass('whiteBG');
-//     }
-// });
+        $('body').addClass('whiteBG');
+    }
+});
 
 
 
@@ -226,11 +226,11 @@ const loadSomeSearches = function (startVal, endVal) {
             what.push(cleanedSearch);
         } else if((firstFiveCharacters.includes('when ')) === true){
             when.push(cleanedSearch);
-        } else if ((firstFiveCharacters.includes('where '))===true){
+        } else if ((firstFiveCharacters === ('where '))){
             where.push(cleanedSearch);
         } else if ((firstFiveCharacters.includes('why '))===true){
             why.push(cleanedSearch);
-        } else if ((firstFiveCharacters.includes('how '))===true){
+        } else if ((firstFiveCharacters===('how '))){
             how.push(cleanedSearch);
         }
 
@@ -238,7 +238,7 @@ const loadSomeSearches = function (startVal, endVal) {
     }
 
     $('#qs').html(`${ws[currentW]}<span class="blinking-cursor">|</span>`);
-    what.forEach(element => $('#searchBlockWhat').append(`<span class="search">${element} </span>`))
+    // what.forEach(element => $('#searchBlockWhat').append(`<span class="search">${element} </span>`))
    
     
     
@@ -321,7 +321,7 @@ const everythingElse = function () {
 
 
 $("#qs").click(function () {
-    
+
     if (currentW === 5) {
         currentW = 0
     } else {
@@ -351,6 +351,7 @@ $("#qs").click(function () {
             
         $('#searchBlockWhat').slideDown(fadeLength, function () {
             $('.nonpronoun').fadeTo(1000, 1);
+            
         });
         
     } else if ($('#qs:contains("what")').length > 0){

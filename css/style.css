@@ -22,7 +22,7 @@ body {
   top: 0;
   left: 0;
   z-index:-10;
-  display:none;
+  /* display:none; */
 }
 
 .whiteBG{
@@ -348,6 +348,7 @@ h2 {
 
 .nonpronoun {
   opacity:0;
+  /* display: none; */
 
 }
 
