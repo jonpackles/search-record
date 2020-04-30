@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book</title>
+    <style>
+       body {
+           font-family: Bookmania;
+
+       }
+
+       #title {
+           text-align: center;
+           position: absolute;
+           
+       }
+    </style>
+</head>
+<body>
+    <div id="book-content">
+    <h1 id="title" >SEARCH<br>RECORD</h1>
+
+    <h3 class="first">about this book</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At incidunt, ad facere excepturi veniam ducimus laborum fugiat laboriosam? Adipisci alias ipsa eos quo. Iste expedita esse laudantium molestiae non veritatis?</p>
+    
+    <h2 class="chapter">1. HOW</h2>
+        <p class="page first">
+            how is sausage made
+        </p>
+
+        <p class="page">
+            how old is joe biden
+        </p>
+
+        <p class="page">
+            how to throw a boomerang
+        </p>
+
+        <p class="page">
+            how to finish sunday crossword
+        </p>
+ 
+        <p class="page first">
+            how is sausage made
+        </p>
+        
+        <p class="page">
+            how old is joe biden
+        </p>
+        
+        <p class="page">
+            how to throw a boomerang
+        </p>
+        
+        <p class="page">
+            how to finish sunday crossword
+        </p>
+
+        <p class="page">
+            how to make banana bread
+        </p>
+
+        <p class="page first">
+            how is sausage made
+        </p>
+        
+        <p class="page">
+            how old is joe biden
+        </p>
+        
+        <p class="page">
+            how to throw a boomerang
+        </p>
+        
+        <p class="page">
+            how to finish sunday crossword
+        </p>
+        
+        <p class="page first">
+            how is sausage made
+        </p>
+        
+        <p class="page">
+            how old is joe biden
+        </p>
+        
+        <p class="page">
+            how to throw a boomerang
+        </p>
+        
+        <p class="page">
+            how to finish sunday crossword
+        </p>
+        
+        <p class="page">
+            how to make banana bread
+        </p>
+        <p class="page first">
+            how is sausage made
+        </p>
+        
+        <p class="page">
+            how old is joe biden
+        </p>
+        
+        <p class="page">
+            how to throw a boomerang
+        </p>
+        
+        <p class="page">
+            how to finish sunday crossword
+        </p>
+        
+        <p class="page first">
+            how is sausage made
+        </p>
+        
+        <p class="page">
+            how old is joe biden
+        </p>
+        
+        <p class="page">
+            how to throw a boomerang
+        </p>
+        
+        <p class="page">
+            how to finish sunday crossword
+        </p>
+        
+        <p class="page">
+            how to make banana bread
+        </p>
+        <p class="page first">
+            how is sausage made
+        </p>
+        
+        <p class="page">
+            how old is joe biden
+        </p>
+        
+        <p class="page">
+            how to throw a boomerang
+        </p>
+        
+        <p class="page">
+            how to finish sunday crossword
+        </p>
+        
+        <p class="page first">
+            how is sausage made
+        </p>
+        
+        <p class="page">
+            how old is joe biden
+        </p>
+        
+        <p class="page">
+            how to throw a boomerang
+        </p>
+        
+        <p class="page">
+            how to finish sunday crossword
+        </p>
+        
+        <p class="page">
+            how to make banana bread
+        </p>
+        <p class="page first">
+            how is sausage made
+        </p>
+        
+        <p class="page">
+            how old is joe biden
+        </p>
+        
+        <p class="page">
+            how to throw a boomerang
+        </p>
+        
+        <p class="page">
+            how to finish sunday crossword
+        </p>
+        
+        <p class="page first">
+            how is sausage made
+        </p>
+        
+        <p class="page">
+            how old is joe biden
+        </p>
+        
+        <p class="page">
+            how to throw a boomerang
+        </p>
+        
+        <p class="page">
+            how to finish sunday crossword
+        </p>
+        
+        <p class="page">
+            how to make banana bread
+        </p>
+
+    
+    
+
+    </div>
+
+
+
+
+    <script src="js/bindery.min.js"></script>
+
+    <script>
+
+        Bindery.makeBook({
+                content: '#book-content',
+                rules: [
+                    Bindery.PageBreak({ selector: '.first', position: 'before' }),
+                    Bindery.PageBreak({ selector: '.chapter', position: 'before' }),
+                    Bindery.PageBreak({ selector: '.chapter', position: 'after' }),
+                    
+                ],
+                view: Bindery.View.FLIPBOOK,
+            });
+
+    </script>
+</body>
+</html>
